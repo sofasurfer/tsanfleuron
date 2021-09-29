@@ -130,6 +130,7 @@ h3,
 	font-size: 36px;
 	font-weight: 300;
 	font-style: italic;
+	color: $color-highlight
 }
 
 .c-text-block blockquote p::before {
@@ -139,7 +140,7 @@ h3,
 	left: 0;
 	top: 0;
 	font-size: 170%;
-	color: $text-color;
+	color: $color-highlight;
 }
 
 
