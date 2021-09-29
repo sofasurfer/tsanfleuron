@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Contentelements
+   ========================================================================== */
+
+/* small elements that don't need their own .scss */
+
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+.c-bg-dark {
+	background-color: $bg-dark;
+}
+
+/* ==========================================================================
+  Showroom
+   ========================================================================== */
+
+.c-showroom {
+	overflow: hidden;
+}
+
+
+
+
+/* ==========================================================================
+  Text img
+   ========================================================================== */
+
+
+.c-bg-light {
+  background-color: $bg-bright;
+}
+
+.c-teaser-cta{
+  padding-top: 4rem !important;
+  margin-bottom: 4em !important;
+  padding-bottom: 0rem;
+}
+
+.c-link-cta{
+  color: $text-color;
+
+  &:hover{
+    color: #e74c4f;
+  }
+}
+
+.c-cookie-notice{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: $bg-dark;
+  color: white;
+  line-height: 1.8;
+  text-align: center;
+  display: none;
+}
+
+
+
+.c-partner-list{
+
+  // display: flex;
+  // flex: 0 1 auto;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+
+  list-style: none;
+
+  // @media only screen and (min-width:640px) {
+  //   flex-direction: row;
+  //   display: block;
+  // }
+
+  li{
+    
+    display: inline-block;
+    list-style: none;
+
+
+    flex: 0 0 auto;
+    padding: 0 12px;
+
+    max-width: 25%;
+
+
+    margin-top: .725rem;
+
+    &::before{
+      content: ""!important;
+    }
+    a{
+      background: none!important;
+    }
+    img{
+      filter: grayscale(100%);
+    }
+
+    @media only screen and (max-width:640px) {
+      max-width: 50%;
+    }
+  }
+
+
+}
+
+
+@media only screen and (max-width:768px) {    
+	.c-cookie-notice {
+		line-height: 1.5;
+	}
+	
+	.c-cookie-notice span {
+		display: block;
+		padding-top: 1em;
+	}
+	
+}

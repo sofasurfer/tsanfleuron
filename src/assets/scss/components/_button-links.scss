@@ -1,0 +1,338 @@
+/* ==========================================================================
+   Link colors and styles
+   ========================================================================== */
+
+a[href^="tel:"] {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+
+/* ==========================================================================
+ links with icons
+   ========================================================================== */
+
+.c-icon {
+    position: relative;
+}
+
+.c-icon::before,
+.c-icon::after {
+    content:'';
+    position: absolute;
+    background-image:url(../images/sprite.svg);
+    background-repeat: no-repeat;
+}
+
+.c-btn-send {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 600;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1;
+    padding: 0.5em 50px 0.5em 0;
+    background: none;
+    border: none;
+    transition: color .1s;
+}
+
+.c-btn-send:hover {
+    color: $color-highlight;
+}
+
+.c-btn-send::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+    width: 32px;
+    height: 17px;
+    background-position: -150px -60px;
+    
+}
+
+.c-link-extern,
+.c-link-download,
+.c-link-extern-singleline {
+    font-weight: 600;
+}
+
+.c-link-download span {
+    font-weight: 300;
+}
+
+.c-icon-extern,
+.c-icon-download,
+.c-icon-arrow-big {
+    display: inline-block;
+    width: 1.25em;
+    height: 1em;
+    margin-left: 0.5em;
+    vertical-align: baseline;
+}
+
+.c-link-extern-singleline {
+    display: inline-block;
+    position: relative;
+    padding-right: 1.75em;
+}
+
+
+
+.c-link-extern-singleline::before,
+.c-icon-extern::before {
+    position: absolute;
+    top: -0.08em;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background-position: 0 -100px;
+}
+
+.c-link-extern-singleline::before {
+    left: auto;
+    right: 0;
+    top: 50%;
+    margin-top: -13px;
+}
+
+/*.c-link-extern:hover .c-icon-extern::before {
+    background-position: -100px -100px;
+}*/
+
+.c-icon-download::before {
+    position: absolute;
+    top: -0.1em;
+    left: 0;
+    width: 18px;
+    height: 22px;
+    background-position: 0 -140px;
+}
+
+/*.c-link-download:hover .c-icon-download::before {
+    background-position: -100px -140px;
+}*/
+
+.c-icon-arrow-big {
+    width: 90px;
+    height: 0.5em;
+    margin-left: 0.25em;
+}
+
+.c-icon-arrow-big::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -22px;
+    width: 85px;
+    height: 45px;
+    background-position: 0 0;
+}
+
+
+.c-btn-social,
+.c-text-block .c-btn-social {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-highlight;
+    transition: transform .1s ease-out;
+}
+
+
+
+.c-footer .c-btn-social {
+    background-color: $text-color-footer;
+}
+
+.c-text-block .c-btn-social {
+    background-image: none;
+}
+
+.c-btn-social:focus,
+.c-btn-social:hover {
+    background-color: $color-highlight;
+    transform: scale(1.1);
+}
+
+.c-btn-social-insta::before {
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    background-position: -100px -180px;
+}
+
+.c-footer .c-btn-social-insta::before {
+    background-position: 0 -180px;
+}
+
+.c-btn-social-fb::before {
+    top: 50%;
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -12px;
+    width: 12px;
+    height: 24px;
+    background-position: -100px -220px;
+}
+
+.c-footer .c-btn-social-fb::before {
+    background-position: 0 -220px;
+}
+
+
+.c-btn-social-linkedin::before {
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -11px;
+    width: 20px;
+    height: 20px;
+    background-position: -100px -260px;
+}
+
+.c-footer .c-btn-social-linkedin::before {
+    background-position: 0 -260px;
+}
+
+
+.c-btn-social-twitter::before {
+    top: 50%;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -9px;
+    width: 24px;
+    height: 20px;
+    background-position: -100px -300px;
+}
+
+.c-footer .c-btn-social-twitter::before {
+    background-position: 0 -300px;
+}
+
+.c-btn-social-download::after {
+    background-image:url(../images/download.svg);
+}
+.c-btn-social-download::before {
+    background-image:url(../images/download.svg);
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    background-position: 0px 0px;
+}
+
+.c-footer .c-btn-social-download::before {
+    background-image:url(../images/download2.svg);
+    background-position: 0px 0px;
+}
+
+
+
+.c-btn-social-googlemaps::after {
+    background-image:url(../images/map.svg);
+}
+.c-btn-social-googlemaps::before {
+    background-image:url(../images/map.svg);
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    background-position: 0px 0px;
+}
+
+.c-footer .c-btn-social-googlemaps::before {
+    background-image:url(../images/map2.svg);
+    background-position: 0px 0px;
+}
+
+
+.c-btn-social-youtube::after {
+    background-image:url(../images/youtube.svg);
+}
+.c-btn-social-youtube::before {
+    background-image:url(../images/youtube.svg);
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    background-position: 0px 0px;
+}
+
+.c-footer .c-btn-social-youtube::before {
+    background-image:url(../images/youtube.svg);
+    background-position: 0px 0px;
+}
+
+.c-link-back {
+    width: 83px;
+    height: 43px;
+}
+
+.c-link-back:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    height: 43px;
+    background-position: 0 -340px;
+}
+
+.c-link-back-small,
+.c-link-next-small {
+    width: 31px;
+    height: 17px;
+}
+
+.c-link-back-small:before,
+.c-link-next-small:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 17px;
+    background-position: -100px -60px;
+}
+
+.c-link-next-small:before {
+    background-position: 0 -60px;
+}
+
+@media only screen and (max-width:767px) {    
+    .c-icon-arrow-big {
+        width: 60px;
+    }
+
+    .c-icon-arrow-big::before {
+        margin-top: -14px;
+        width: 62px;
+        height: 33px;
+        background-position: -100px 0;
+    }
+    
+    .c-link-back {
+        width: 60px;
+        height: 31px;
+    }
+
+    .c-link-back:before {
+        width: 60px;
+        height: 31px;
+        background-position: -100px -340px;
+    }
+}
