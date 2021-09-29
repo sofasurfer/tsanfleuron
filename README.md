@@ -1,6 +1,5 @@
-# Default Website Prototype
-
-Boilerplate for frontend development @ cubegrafik GmbH.
+# WP Theme Tsanfleuron
+Boilerplate for frontend development @ sofasurfer.
 
 Pork this project for future development
 
