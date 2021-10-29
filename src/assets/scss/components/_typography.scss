@@ -2,7 +2,7 @@
    Base
    ========================================================================== */
 html {
-	font-size: 18px;
+	font-size: 20px;
 }
 
 /* ==========================================================================
@@ -23,25 +23,28 @@ h6 {
 h1,.c-h1 {
 	padding-bottom: .4em;
 	line-height: 1.2;
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: normal;
+	font-family: $font-stack-title;
 }
 
 h2,
 .c-h2 {
 	padding-bottom: .4em;
 	line-height: 1.2;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: bold;
+	font-family: $font-stack-title;
 }
 
 
 h3,
 .c-h3 {
 	line-height: 1.5;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	padding-bottom: 1rem;
+	font-family: $font-stack-title;
 }
 
 
@@ -130,7 +133,8 @@ h3,
 	font-size: 36px;
 	font-weight: 300;
 	font-style: italic;
-	color: $color-highlight
+	color: $color-highlight;
+	// font-family: $font-stack-title;
 }
 
 .c-text-block blockquote p::before {
