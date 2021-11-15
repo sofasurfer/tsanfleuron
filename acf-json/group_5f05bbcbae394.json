@@ -321,7 +321,7 @@
                                 "download": "Download"
                             },
                             "default_value": false,
-                            "allow_null": 0,
+                            "allow_null": 1,
                             "multiple": 0,
                             "ui": 0,
                             "return_format": "value",
@@ -334,14 +334,13 @@
                             "name": "link",
                             "type": "link",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "80",
                                 "class": "",
                                 "id": ""
                             },
-                            "wpml_cf_preferences": 3,
                             "return_format": "array"
                         }
                     ]
@@ -373,5 +372,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1632943372
+    "modified": 1636707851
 }

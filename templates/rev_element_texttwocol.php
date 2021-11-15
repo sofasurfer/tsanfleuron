@@ -8,7 +8,7 @@
                 <div class="animation"><?= $site_element['col1']; ?></div>
             <?php endif; ?>
         </div>
-        <div class="c-col-5 c-text-block animation-element fade-up">
+        <div class="c-col-6 c-text-block animation-element fade-up">
             <div class="animation">
                 <?= apply_filters('the_content', $site_element['content']); ?>
             </div>
