@@ -22,7 +22,26 @@
 }
 
 
+.c-img-tiles{
 
+  .c-col-4{
+    padding-bottom: 60px;
+  }
+
+}
+
+@media only screen and (max-width:767px) {  
+
+  .c-img-tiles{
+
+    .c-col-4{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+  }
+
+}
 
 /* ==========================================================================
   Text img
