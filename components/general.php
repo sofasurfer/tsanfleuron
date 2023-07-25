@@ -324,11 +324,11 @@ class General {
         }else{
             $alt = get_the_title( $args['id'] );
         }
-
+        $image = '';
         // error_log(print_r(get_intermediate_image_sizes(),true));
 
         // get different image sizes
-        if( $args['mobile'] && !empty($args['mobile']) ){
+        if( !empty($args['mobile']) ){
             $src_small = wp_get_attachment_image_src( $args['mobile'], 'thumbnail' );
             $srcset  = $src_small[0] . ' 400w,';
             $scr_medium = wp_get_attachment_image_src( $args['mobile'], 'medium' );
@@ -355,7 +355,7 @@ class General {
         $image .= '<noscript><img src="'.$scr_full[0].'" alt="'.$alt.'" /></noscript>';
         $image .= '<img class="lazy" sizes="'.$sizes.'" data-srcset="'.$srcset.'" data-src="'.$scr_large[0].'" alt="'.$alt.'" />';
 
-        if( $args['legend'] ){            
+        if( !empty($args['legend']) ){            
             $attachment = get_post( $args['id'] );
             if($attachment){
                 $image .= '<figcaption class="c-legend">' . $attachment->post_excerpt. '</figcaption>';

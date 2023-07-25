@@ -33,7 +33,7 @@ if( get_post_type() == 'portfolio' ){
         <div class="c-container c-container-no-padding c-showroom-text">
             <div class="c-row c-row-align-bottom">
                 <div class="c-col-10 c-showroom-text-inner animation-element fade-up">
-                    <?php if( $categories ): ?>
+                    <?php if( !empty($categories) ): ?>
                         <span class="c-category-title"><?= $categories; ?></span>
                     <?php endif; ?>
                     <h1 class="animation"><?= $pagetitle; ?></h1>
